@@ -1,0 +1,12 @@
+{
+  "id": "S02",
+  "url": "https://akses.ksei.co.id/service/demografis/gender?id=",
+  "status": 200,
+  "scanned_at": "2026-10-26T07:35:19Z",
+  "description": "SID investor demographics by province/city split by gender (empty id = national)",
+  "category": "investor/sid",
+  "params": {
+    "id": ""
+  },
+  "method": "GET"
+}

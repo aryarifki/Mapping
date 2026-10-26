@@ -1,0 +1,10 @@
+{
+  "id": "S03",
+  "url": "https://akses.ksei.co.id/service/demografis/detil-data",
+  "status": 200,
+  "scanned_at": "2026-10-26T07:35:19Z",
+  "description": "Per-region investor counts with lat/long, for map rendering",
+  "category": "investor/sid",
+  "params": {},
+  "method": "GET"
+}

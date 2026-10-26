@@ -1,0 +1,12 @@
+{
+  "id": "K14",
+  "url": "https://www.ksei.co.id/api/investor_demographic/mutual_assets?locale=en&filter%5Bfour_years_data%5D=October+2026",
+  "status": 200,
+  "scanned_at": "2026-10-26T07:16:05Z",
+  "description": "Mutual fund product count and AUM, 4-year window",
+  "category": "investor/sid",
+  "params": {
+    "locale": "en",
+    "filter[four_years_data]": "October 2026"
+  }
+}

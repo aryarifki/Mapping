@@ -1,0 +1,11 @@
+{
+  "id": "K18",
+  "url": "https://www.ksei.co.id/api/account_managements?locale=id",
+  "status": 200,
+  "scanned_at": "2026-10-26T07:16:05Z",
+  "description": "Sub-account administration statistics",
+  "category": "account",
+  "params": {
+    "locale": "id"
+  }
+}

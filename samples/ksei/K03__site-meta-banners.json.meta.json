@@ -1,0 +1,11 @@
+{
+  "id": "K03",
+  "url": "https://www.ksei.co.id/api/banners?locale=id",
+  "status": 200,
+  "scanned_at": "2026-10-26T07:16:05Z",
+  "description": "Homepage banner carousel",
+  "category": "site-meta",
+  "params": {
+    "locale": "id"
+  }
+}

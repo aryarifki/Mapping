@@ -1,0 +1,11 @@
+{
+  "id": "K19",
+  "url": "https://www.ksei.co.id/api/account_managements/categories?locale=id",
+  "status": 200,
+  "scanned_at": "2026-10-26T07:16:05Z",
+  "description": "Categories used by account_managements",
+  "category": "reference",
+  "params": {
+    "locale": "id"
+  }
+}

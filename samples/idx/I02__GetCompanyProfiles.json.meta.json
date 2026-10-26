@@ -1,0 +1,13 @@
+{
+  "id": "I02",
+  "url": "https://www.idx.co.id/primary/ListedCompany/GetCompanyProfiles?start=0&length=9999&language=id",
+  "status": 200,
+  "scanned_at": "2026-10-26T07:51:42Z",
+  "description": "Issuer profiles: address, sector, sub-sector, listing board, website",
+  "category": "listing",
+  "params": {
+    "start": "0",
+    "length": "9999",
+    "language": "id"
+  }
+}

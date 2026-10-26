@@ -1,0 +1,12 @@
+{
+  "id": "K22",
+  "url": "https://www.ksei.co.id/api/graph/aktiva_graphs/shares?locale=id&sort=month",
+  "status": 200,
+  "scanned_at": "2026-10-26T07:16:05Z",
+  "description": "Custody shares series",
+  "category": "graph",
+  "params": {
+    "locale": "id",
+    "sort": "month"
+  }
+}

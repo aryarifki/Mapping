@@ -1,0 +1,13 @@
+rn,created_at,updated_at,order,id,category,deleted_at,published_at,is_published,category_id,document_name
+1,2024-07-31 14:44:08,2026-05-25 11:51:16,1,0d276581-9d63-4fa2-8965-89e873120075,Pendaftaran Akun,,2026-05-25 11:51:16,1,db91fe96-fd77-41d9-b691-6ad77f9b23d5,Panduan Static Data Investor
+2,2024-07-31 14:47:18,2026-05-25 11:51:16,1,9584069d-556c-4dd8-8671-9e1feb05c849,Penutupan Akun,,2026-05-25 11:51:16,1,96ddaf6d-39da-401d-abf6-e8e2781839ef,Panduan Penutupan Sub Rekening Efek dan Statik Data Investor 
+3,2024-07-31 14:49:12,2026-05-25 11:51:16,1,22d96874-2c18-480e-b9a3-74106705ef6a,Perubahan Data,,2026-05-25 11:51:16,1,cfc8924b-1fa3-40a3-b938-1f9a00ce88ba,Panduan Perubahan Statik Data Investor
+4,2024-07-31 14:51:30,2026-05-25 11:51:16,1,0d6e4c6a-05b8-42d8-a04d-ac637402065a,Pemblokiran Akun,,2026-05-25 11:51:16,1,53eb0f9a-8a5a-4444-bf9b-304c9b085f44,Panduan Pengguna Pembekuan/Pencabutan Pembekuan Sub Rekening Efek dan/atau Saldo Efek (Restriction)
+5,2024-07-31 14:48:02,2026-05-25 11:51:16,2,12cf5e7c-b6d0-4141-b1c6-231a71a11958,Penutupan Akun,,2026-05-25 11:51:16,1,96ddaf6d-39da-401d-abf6-e8e2781839ef,Panduan Pengguna deaktivasi Data Investor Melalui Fungsi File Upload
+6,2024-07-31 14:45:06,2026-05-25 11:51:16,2,9496d2fe-f2b1-441a-b242-b5aa3403df09,Pendaftaran Akun,,2026-05-25 11:51:16,1,db91fe96-fd77-41d9-b691-6ad77f9b23d5,Template SDI Individual
+7,2024-07-31 14:49:52,2026-05-25 11:51:16,2,8e27e036-7d13-42b2-b4e3-53fdfbb7b475,Perubahan Data,,2026-05-25 11:51:16,1,cfc8924b-1fa3-40a3-b938-1f9a00ce88ba,Contoh Lampiran Perubahan SRE Individu
+8,2024-07-31 14:50:28,2026-05-25 11:51:16,3,69e3b663-3066-4ba6-9288-3f681fe8533e,Perubahan Data,,2026-05-25 11:51:16,1,cfc8924b-1fa3-40a3-b938-1f9a00ce88ba,Contoh Lampiran Perubahan SRE Institusi
+9,2024-07-31 14:46:17,2026-05-25 11:51:16,3,983c6b29-f3ea-4c06-ad74-6abed09f93b3,Pendaftaran Akun,,2026-05-25 11:51:16,1,db91fe96-fd77-41d9-b691-6ad77f9b23d5,Template SDI Institutional
+10,2025-03-07 14:27:21,2026-05-25 11:51:16,4,198ab905-c520-496f-ac0f-3cf550d6ee78,Perubahan Data,,2026-05-25 11:51:16,1,cfc8924b-1fa3-40a3-b938-1f9a00ce88ba,File Upload
+11,2025-02-28 15:45:58,2026-05-25 11:51:16,4,8fa4fbed-bde7-4b8e-9494-ec29c6e92aed,Pendaftaran Akun,,2026-05-25 11:51:16,1,db91fe96-fd77-41d9-b691-6ad77f9b23d5,File Upload
+12,2025-03-06 15:31:40,2026-05-25 11:51:16,5,27672c13-465f-4e9b-be47-49d5b80b2ace,Pendaftaran Akun,,2026-05-25 11:51:16,1,db91fe96-fd77-41d9-b691-6ad77f9b23d5,Acuan Data dan Informasi Pembentukan SID

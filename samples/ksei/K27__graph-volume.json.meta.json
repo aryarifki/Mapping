@@ -1,0 +1,12 @@
+{
+  "id": "K27",
+  "url": "https://www.ksei.co.id/api/graph/overbooking_graphs/volume?locale=id&sort=month",
+  "status": 200,
+  "scanned_at": "2026-10-26T07:16:05Z",
+  "description": "Overbooking volume",
+  "category": "graph",
+  "params": {
+    "locale": "id",
+    "sort": "month"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "K25",
+  "url": "https://www.ksei.co.id/api/graph/cbest_graphs/instrument_information?locale=id",
+  "status": 200,
+  "scanned_at": "2026-10-26T07:16:05Z",
+  "description": "C-BEST instrument mix",
+  "category": "graph",
+  "params": {
+    "locale": "id"
+  }
+}

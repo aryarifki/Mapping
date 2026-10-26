@@ -1,0 +1,12 @@
+{
+  "id": "I03",
+  "url": "https://www.idx.co.id/primary/ListedCompany/GetCompanyProfilesDetail?KodeEmiten=BBCA&language=id",
+  "status": 200,
+  "scanned_at": "2026-10-26T07:51:42Z",
+  "description": "Single-issuer detail: management, commissioners, shareholders, subsidiaries",
+  "category": "listing",
+  "params": {
+    "KodeEmiten": "BBCA",
+    "language": "id"
+  }
+}

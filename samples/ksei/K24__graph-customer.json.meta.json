@@ -1,0 +1,11 @@
+{
+  "id": "K24",
+  "url": "https://www.ksei.co.id/api/graph/cbest_graphs/customer?locale=id",
+  "status": 200,
+  "scanned_at": "2026-10-26T07:16:05Z",
+  "description": "C-BEST participant customer composition",
+  "category": "graph",
+  "params": {
+    "locale": "id"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "K15",
+  "url": "https://www.ksei.co.id/api/securities_ownerships?locale=id",
+  "status": 200,
+  "scanned_at": "2026-10-26T07:16:05Z",
+  "description": "Securities ownership breakdown (local vs foreign)",
+  "category": "ownership",
+  "params": {
+    "locale": "id"
+  }
+}

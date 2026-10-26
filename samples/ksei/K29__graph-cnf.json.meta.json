@@ -1,0 +1,12 @@
+{
+  "id": "K29",
+  "url": "https://www.ksei.co.id/api/graph/overbooking_graphs/cnf?locale=id&sort=month",
+  "status": 200,
+  "scanned_at": "2026-10-26T07:16:05Z",
+  "description": "CNF settlement series",
+  "category": "graph",
+  "params": {
+    "locale": "id",
+    "sort": "month"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "K07",
+  "url": "https://www.ksei.co.id/api/investor_demographic/sid_growths?locale=en&filter%5Btype%5D=Number+of+Capital+Market+Investors&filter%5Bthree_years_data%5D=October+2026",
+  "status": 200,
+  "scanned_at": "2026-10-26T07:16:05Z",
+  "description": "SID investor-count growth, 3-year window for one series",
+  "category": "investor/sid",
+  "params": {
+    "locale": "en",
+    "filter[type]": "Number of Capital Market Investors",
+    "filter[three_years_data]": "October 2026"
+  }
+}

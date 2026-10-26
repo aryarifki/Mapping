@@ -1,0 +1,12 @@
+{
+  "id": "K20",
+  "url": "https://www.ksei.co.id/api/graph/aktiva_graphs/assets?locale=id&sort=month",
+  "status": 200,
+  "scanned_at": "2026-10-26T07:16:05Z",
+  "description": "Custody assets: total/foreign/local (IDR tn)",
+  "category": "graph",
+  "params": {
+    "locale": "id",
+    "sort": "month"
+  }
+}

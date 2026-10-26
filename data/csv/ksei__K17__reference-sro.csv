@@ -1,0 +1,13 @@
+rn,name,type,link,order,created_at,updated_at,id,deleted_at,is_published,published_at,type_id
+1,OJK,OJK & SRO,https://www.ojk.go.id/id/Default.aspx,1,2023-11-27 09:26:35,2026-05-20 21:16:48,b2feeccb-d3d1-417c-a866-f3c6894694e1,,1,2026-05-20 21:16:00,70ef1203-5437-4ac7-a639-08a0dd7f5d5f
+2,ACG,Membership,https://www.acgcsd.org/,1,2023-11-27 09:29:27,2026-05-20 21:17:30,9b67978c-4711-45ef-89c4-365dea776ca1,,1,2026-05-20 21:17:00,236b454a-2b58-47eb-9df9-38b87652e2b9
+3,IDXSTI,Subsidiary,https://idxsti.co.id/,1,2023-11-27 09:38:49,2026-05-20 21:17:56,17477478-b98e-43e5-a247-342f024880e8,,1,2026-05-20 21:17:00,1ff2063d-37ec-4d05-8e74-2f854b6a338d
+4,AECSD,Membership,https://aecsd.org/en/,2,2025-04-24 15:35:24,2026-05-20 21:17:46,67272ab8-77e1-495a-9c58-72eded5210e2,,1,2026-05-20 21:17:00,236b454a-2b58-47eb-9df9-38b87652e2b9
+5,IDX,OJK & SRO,https://www.idx.co.id/id,2,2023-11-27 09:27:30,2026-05-20 21:16:35,c1240337-fd4e-4962-8c5d-d9e75288c06d,,1,2026-05-20 21:16:00,70ef1203-5437-4ac7-a639-08a0dd7f5d5f
+6,TICMI,Subsidiary,https://ticmi.co.id/,2,2023-11-27 09:39:42,2026-05-20 21:17:21,9ef29b7d-1d44-49de-b334-fa4e80b52deb,,1,2026-05-20 21:17:00,1ff2063d-37ec-4d05-8e74-2f854b6a338d
+7,PEI,Subsidiary,https://www.pei.co.id/id,3,2023-11-27 09:41:12,2026-05-20 21:18:05,3436033f-3dd1-4ab0-b7f2-f4044bffa465,,1,2026-05-20 21:18:00,1ff2063d-37ec-4d05-8e74-2f854b6a338d
+8,ANNA,Membership,https://anna-web.org/,3,2023-11-27 09:30:00,2026-05-20 21:18:15,33ac0871-8c04-4a4c-a770-20c1a7ffcbc1,,1,2026-05-20 21:18:00,236b454a-2b58-47eb-9df9-38b87652e2b9
+9,IDCLEAR,OJK & SRO,https://www.idclear.co.id/id,3,2023-11-27 09:28:22,2026-05-20 21:16:27,c685af3a-994a-41ba-b7ca-62b0d983cd18,,1,2026-05-20 21:16:00,70ef1203-5437-4ac7-a639-08a0dd7f5d5f
+10,PHEI,Subsidiary,https://www.phei.co.id/,4,2023-11-27 09:42:01,2026-05-20 21:17:39,82665b88-3459-4638-b405-82f4cac24b1e,,1,2026-05-20 21:17:00,1ff2063d-37ec-4d05-8e74-2f854b6a338d
+11,SIPF,Subsidiary,https://www.indonesiasipf.co.id/,5,2023-11-27 09:43:07,2026-05-20 21:16:19,d99136e8-ff88-4302-ab60-8f78222aa859,,1,2026-05-20 21:16:00,1ff2063d-37ec-4d05-8e74-2f854b6a338d
+12,IDXCHANNEL,Subsidiary,https://www.idxchannel.com/,6,2023-11-27 09:44:04,2026-05-20 21:17:01,b19bddad-7b18-438d-ad5b-fbe5b1846aca,,1,2026-05-20 21:16:00,1ff2063d-37ec-4d05-8e74-2f854b6a338d

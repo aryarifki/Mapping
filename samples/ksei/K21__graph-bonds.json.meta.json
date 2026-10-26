@@ -1,0 +1,12 @@
+{
+  "id": "K21",
+  "url": "https://www.ksei.co.id/api/graph/aktiva_graphs/bonds?locale=id&sort=month",
+  "status": 200,
+  "scanned_at": "2026-10-26T07:16:05Z",
+  "description": "Custody bonds series",
+  "category": "graph",
+  "params": {
+    "locale": "id",
+    "sort": "month"
+  }
+}

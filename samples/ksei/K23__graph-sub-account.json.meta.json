@@ -1,0 +1,12 @@
+{
+  "id": "K23",
+  "url": "https://www.ksei.co.id/api/graph/aktiva_graphs/sub_account?locale=id&sort=month",
+  "status": 200,
+  "scanned_at": "2026-10-26T07:16:05Z",
+  "description": "Sub-account count series",
+  "category": "graph",
+  "params": {
+    "locale": "id",
+    "sort": "month"
+  }
+}

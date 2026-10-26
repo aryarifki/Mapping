@@ -1,0 +1,850 @@
+[
+  {
+    "id": "K01",
+    "host": "www.ksei.co.id",
+    "path": "/api/settings",
+    "method": "GET",
+    "params": {
+      "locale": "id"
+    },
+    "description": "Site-wide settings key/value bundle",
+    "category": "site-meta",
+    "status": "active",
+    "http": 200,
+    "bytes": 3840,
+    "fields": [
+      "rn",
+      "id",
+      "key",
+      "value",
+      "type",
+      "deleted_at",
+      "created_at",
+      "updated_at"
+    ],
+    "sample": "samples/ksei/K01__site-meta-settings.json",
+    "scanned_at": "2026-10-26T07:54:39Z"
+  },
+  {
+    "id": "K02",
+    "host": "www.ksei.co.id",
+    "path": "/api/menus",
+    "method": "GET",
+    "params": {
+      "locale": "id"
+    },
+    "description": "Full CMS navigation tree",
+    "category": "site-meta",
+    "status": "active",
+    "http": 200,
+    "bytes": 13764,
+    "fields": [
+      "rn",
+      "id",
+      "order",
+      "level",
+      "parent_id",
+      "type",
+      "is_published",
+      "published_at",
+      "created_at",
+      "updated_at",
+      "deleted_at",
+      "title",
+      "url_menu",
+      "url_content"
+    ],
+    "sample": "samples/ksei/K02__site-meta-menus.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K03",
+    "host": "www.ksei.co.id",
+    "path": "/api/banners",
+    "method": "GET",
+    "params": {
+      "locale": "id"
+    },
+    "description": "Homepage banner carousel",
+    "category": "site-meta",
+    "status": "active",
+    "http": 200,
+    "bytes": 1191,
+    "fields": [
+      "rn",
+      "updated_at",
+      "order",
+      "published_at",
+      "id",
+      "deleted_at",
+      "is_published",
+      "created_at",
+      "name"
+    ],
+    "sample": "samples/ksei/K03__site-meta-banners.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K04",
+    "host": "www.ksei.co.id",
+    "path": "/api/seo_metas",
+    "method": "GET",
+    "params": {
+      "locale": "id"
+    },
+    "description": "Per-page SEO metadata",
+    "category": "site-meta",
+    "status": "active",
+    "http": 200,
+    "bytes": 458,
+    "fields": [
+      "rn",
+      "id",
+      "attachable_type",
+      "locale",
+      "seo_url",
+      "seo_title",
+      "seo_description",
+      "seo_content",
+      "open_graph_type",
+      "deleted_at",
+      "created_at",
+      "updated_at",
+      "attachable_id"
+    ],
+    "sample": "samples/ksei/K04__site-meta-seo-metas.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K05",
+    "host": "www.ksei.co.id",
+    "path": "/api/board_types",
+    "method": "GET",
+    "params": {
+      "locale": "id"
+    },
+    "description": "IDX board classification (Utama/Pengembangan/Ekonomi Baru)",
+    "category": "reference",
+    "status": "active",
+    "http": 200,
+    "bytes": 831,
+    "fields": [
+      "rn",
+      "published_at",
+      "is_published",
+      "created_at",
+      "updated_at",
+      "id",
+      "order",
+      "deleted_at",
+      "show_year",
+      "name"
+    ],
+    "sample": "samples/ksei/K05__reference-board-types.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K06",
+    "host": "www.ksei.co.id",
+    "path": "/api/investor_demographic/sid_growths/types",
+    "method": "GET",
+    "params": {
+      "locale": "id"
+    },
+    "description": "Enumerates the four SID investor-count series",
+    "category": "investor/sid",
+    "status": "active",
+    "http": 200,
+    "bytes": 376,
+    "fields": [
+      "key",
+      "name"
+    ],
+    "sample": "samples/ksei/K06__investor-sid-types.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K07",
+    "host": "www.ksei.co.id",
+    "path": "/api/investor_demographic/sid_growths",
+    "method": "GET",
+    "params": {
+      "locale": "en",
+      "filter[type]": "Number of Capital Market Investors",
+      "filter[three_years_data]": "October 2026"
+    },
+    "description": "SID investor-count growth, 3-year window for one series",
+    "category": "investor/sid",
+    "status": "active",
+    "http": 200,
+    "bytes": 471,
+    "fields": [
+      "rn",
+      "month",
+      "asset_local",
+      "type"
+    ],
+    "sample": "samples/ksei/K07__investor-sid-sid-growths.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K08",
+    "host": "www.ksei.co.id",
+    "path": "/api/investor_demographic/domestic_investors",
+    "method": "GET",
+    "params": {
+      "locale": "id"
+    },
+    "description": "Domestic vs foreign investor composition",
+    "category": "investor/sid",
+    "status": "active",
+    "http": 200,
+    "bytes": 7970,
+    "fields": [
+      "rn",
+      "asset_total",
+      "created_at",
+      "updated_at",
+      "investor_percentage",
+      "asset_percentage",
+      "month",
+      "id",
+      "deleted_at",
+      "area"
+    ],
+    "sample": "samples/ksei/K08__investor-sid-domestic-investors.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K09",
+    "host": "www.ksei.co.id",
+    "path": "/api/investor_demographic/individual/age",
+    "method": "GET",
+    "params": {
+      "locale": "id"
+    },
+    "description": "Individual investor count by age band",
+    "category": "investor/sid",
+    "status": "active",
+    "http": 200,
+    "bytes": 11609,
+    "fields": [
+      "rn",
+      "created_at",
+      "updated_at",
+      "month",
+      "order",
+      "age_range_qty",
+      "total_asset",
+      "published_at",
+      "id",
+      "deleted_at",
+      "is_published",
+      "age_range_id",
+      "age_range_count",
+      "name"
+    ],
+    "sample": "samples/ksei/K09__investor-sid-age.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K10",
+    "host": "www.ksei.co.id",
+    "path": "/api/investor_demographic/individual/education",
+    "method": "GET",
+    "params": {
+      "locale": "id"
+    },
+    "description": "Individual investor count by education level",
+    "category": "investor/sid",
+    "status": "active",
+    "http": 200,
+    "bytes": 11134,
+    "fields": [
+      "rn",
+      "created_at",
+      "updated_at",
+      "month",
+      "order",
+      "education_category_count",
+      "total_asset",
+      "published_at",
+      "id",
+      "deleted_at",
+      "is_published",
+      "education_category_id",
+      "name"
+    ],
+    "sample": "samples/ksei/K10__investor-sid-education.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K11",
+    "host": "www.ksei.co.id",
+    "path": "/api/investor_demographic/individual/gender",
+    "method": "GET",
+    "params": {
+      "locale": "id"
+    },
+    "description": "Individual investor count by gender",
+    "category": "investor/sid",
+    "status": "active",
+    "http": 200,
+    "bytes": 2340,
+    "fields": [
+      "rn",
+      "month",
+      "created_at",
+      "updated_at",
+      "published_at",
+      "id",
+      "deleted_at",
+      "is_published",
+      "man_count",
+      "man_total_asset",
+      "woman_count",
+      "woman_total_asset"
+    ],
+    "sample": "samples/ksei/K11__investor-sid-gender.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K12",
+    "host": "www.ksei.co.id",
+    "path": "/api/investor_demographic/individual/income",
+    "method": "GET",
+    "params": {
+      "locale": "id"
+    },
+    "description": "Individual investor count by income band",
+    "category": "investor/sid",
+    "status": "active",
+    "http": 200,
+    "bytes": 11112,
+    "fields": [
+      "rn",
+      "created_at",
+      "updated_at",
+      "month",
+      "order",
+      "income_range_qty",
+      "total_asset",
+      "published_at",
+      "id",
+      "deleted_at",
+      "is_published",
+      "income_range_id",
+      "income_range_count",
+      "name"
+    ],
+    "sample": "samples/ksei/K12__investor-sid-income.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K13",
+    "host": "www.ksei.co.id",
+    "path": "/api/investor_demographic/individual/job_demographics",
+    "method": "GET",
+    "params": {
+      "locale": "id"
+    },
+    "description": "Individual investor count by occupation",
+    "category": "investor/sid",
+    "status": "active",
+    "http": 200,
+    "bytes": 11852,
+    "fields": [
+      "rn",
+      "month",
+      "order",
+      "occupation_qty",
+      "total_asset",
+      "created_at",
+      "updated_at",
+      "published_at",
+      "id",
+      "deleted_at",
+      "is_published",
+      "occupation_id",
+      "job_category_count",
+      "name"
+    ],
+    "sample": "samples/ksei/K13__investor-sid-job-demographics.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K14",
+    "host": "www.ksei.co.id",
+    "path": "/api/investor_demographic/mutual_assets",
+    "method": "GET",
+    "params": {
+      "locale": "en",
+      "filter[four_years_data]": "October 2026"
+    },
+    "description": "Mutual fund product count and AUM, 4-year window",
+    "category": "investor/sid",
+    "status": "active",
+    "http": 200,
+    "bytes": 411,
+    "fields": [
+      "rn",
+      "month",
+      "investation_product_count",
+      "managed_asset"
+    ],
+    "sample": "samples/ksei/K14__investor-sid-mutual-assets.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K15",
+    "host": "www.ksei.co.id",
+    "path": "/api/securities_ownerships",
+    "method": "GET",
+    "params": {
+      "locale": "id"
+    },
+    "description": "Securities ownership breakdown (local vs foreign)",
+    "category": "ownership",
+    "status": "active",
+    "http": 200,
+    "bytes": 7296,
+    "fields": [
+      "date",
+      "name",
+      "pdf_id"
+    ],
+    "sample": "samples/ksei/K15__ownership-securities-ownerships.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K16",
+    "host": "www.ksei.co.id",
+    "path": "/api/static_stocks",
+    "method": "GET",
+    "params": {
+      "locale": "id"
+    },
+    "description": "Monthly static securities master files (zip download links)",
+    "category": "bulk-download",
+    "status": "active",
+    "http": 200,
+    "bytes": 7240,
+    "fields": [
+      "date",
+      "name",
+      "pdf_id"
+    ],
+    "sample": "samples/ksei/K16__bulk-download-static-stocks.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K17",
+    "host": "www.ksei.co.id",
+    "path": "/api/sro",
+    "method": "GET",
+    "params": {
+      "locale": "id"
+    },
+    "description": "SRO / self-regulatory organisation reference data",
+    "category": "reference",
+    "status": "active",
+    "http": 200,
+    "bytes": 4089,
+    "fields": [
+      "rn",
+      "name",
+      "type",
+      "link",
+      "order",
+      "created_at",
+      "updated_at",
+      "id",
+      "deleted_at",
+      "is_published",
+      "published_at",
+      "type_id"
+    ],
+    "sample": "samples/ksei/K17__reference-sro.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K18",
+    "host": "www.ksei.co.id",
+    "path": "/api/account_managements",
+    "method": "GET",
+    "params": {
+      "locale": "id"
+    },
+    "description": "Sub-account administration statistics",
+    "category": "account",
+    "status": "active",
+    "http": 200,
+    "bytes": 4324,
+    "fields": [
+      "rn",
+      "created_at",
+      "updated_at",
+      "order",
+      "id",
+      "category",
+      "deleted_at",
+      "published_at",
+      "is_published",
+      "category_id",
+      "document_name"
+    ],
+    "sample": "samples/ksei/K18__account-account-managements.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K19",
+    "host": "www.ksei.co.id",
+    "path": "/api/account_managements/categories",
+    "method": "GET",
+    "params": {
+      "locale": "id"
+    },
+    "description": "Categories used by account_managements",
+    "category": "reference",
+    "status": "active",
+    "http": 200,
+    "bytes": 215,
+    "fields": [
+      "key",
+      "name"
+    ],
+    "sample": "samples/ksei/K19__reference-categories.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K20",
+    "host": "www.ksei.co.id",
+    "path": "/api/graph/aktiva_graphs/assets",
+    "method": "GET",
+    "params": {
+      "locale": "id",
+      "sort": "month"
+    },
+    "description": "Custody assets: total/foreign/local (IDR tn)",
+    "category": "graph",
+    "status": "active",
+    "http": 200,
+    "bytes": 1808,
+    "fields": [
+      "category",
+      "month",
+      "foreign_asset",
+      "local_asset",
+      "total"
+    ],
+    "sample": "samples/ksei/K20__graph-assets.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K21",
+    "host": "www.ksei.co.id",
+    "path": "/api/graph/aktiva_graphs/bonds",
+    "method": "GET",
+    "params": {
+      "locale": "id",
+      "sort": "month"
+    },
+    "description": "Custody bonds series",
+    "category": "graph",
+    "status": "active",
+    "http": 200,
+    "bytes": 1786,
+    "fields": [
+      "category",
+      "month",
+      "foreign_asset",
+      "local_asset",
+      "total"
+    ],
+    "sample": "samples/ksei/K21__graph-bonds.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K22",
+    "host": "www.ksei.co.id",
+    "path": "/api/graph/aktiva_graphs/shares",
+    "method": "GET",
+    "params": {
+      "locale": "id",
+      "sort": "month"
+    },
+    "description": "Custody shares series",
+    "category": "graph",
+    "status": "active",
+    "http": 200,
+    "bytes": 1705,
+    "fields": [
+      "category",
+      "month",
+      "foreign_asset",
+      "local_asset",
+      "total"
+    ],
+    "sample": "samples/ksei/K22__graph-shares.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K23",
+    "host": "www.ksei.co.id",
+    "path": "/api/graph/aktiva_graphs/sub_account",
+    "method": "GET",
+    "params": {
+      "locale": "id",
+      "sort": "month"
+    },
+    "description": "Sub-account count series",
+    "category": "graph",
+    "status": "active",
+    "http": 200,
+    "bytes": 1706,
+    "fields": [
+      "category",
+      "month",
+      "foreign_asset",
+      "local_asset",
+      "total"
+    ],
+    "sample": "samples/ksei/K23__graph-sub-account.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K24",
+    "host": "www.ksei.co.id",
+    "path": "/api/graph/cbest_graphs/customer",
+    "method": "GET",
+    "params": {
+      "locale": "id"
+    },
+    "description": "C-BEST participant customer composition",
+    "category": "graph",
+    "status": "active",
+    "http": 200,
+    "bytes": 387,
+    "fields": [
+      "id",
+      "participant",
+      "amount",
+      "percentage",
+      "category"
+    ],
+    "sample": "samples/ksei/K24__graph-customer.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K25",
+    "host": "www.ksei.co.id",
+    "path": "/api/graph/cbest_graphs/instrument_information",
+    "method": "GET",
+    "params": {
+      "locale": "id"
+    },
+    "description": "C-BEST instrument mix",
+    "category": "graph",
+    "status": "active",
+    "http": 200,
+    "bytes": 2874,
+    "fields": [
+      "id",
+      "instrument",
+      "amount",
+      "percentage",
+      "category"
+    ],
+    "sample": "samples/ksei/K25__graph-instrument-information.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K26",
+    "host": "www.ksei.co.id",
+    "path": "/api/graph/overbooking_graphs/value",
+    "method": "GET",
+    "params": {
+      "locale": "id",
+      "sort": "month"
+    },
+    "description": "Overbooking value, FOP vs VP",
+    "category": "graph",
+    "status": "active",
+    "http": 200,
+    "bytes": 20255,
+    "fields": [
+      "category",
+      "month",
+      "fop",
+      "vp",
+      "total"
+    ],
+    "sample": "samples/ksei/K26__graph-value.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K27",
+    "host": "www.ksei.co.id",
+    "path": "/api/graph/overbooking_graphs/volume",
+    "method": "GET",
+    "params": {
+      "locale": "id",
+      "sort": "month"
+    },
+    "description": "Overbooking volume",
+    "category": "graph",
+    "status": "active",
+    "http": 200,
+    "bytes": 20890,
+    "fields": [
+      "category",
+      "month",
+      "fop",
+      "vp",
+      "total"
+    ],
+    "sample": "samples/ksei/K27__graph-volume.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K28",
+    "host": "www.ksei.co.id",
+    "path": "/api/graph/overbooking_graphs/frequency",
+    "method": "GET",
+    "params": {
+      "locale": "id",
+      "sort": "month"
+    },
+    "description": "Overbooking frequency (DFOP/DVP)",
+    "category": "graph",
+    "status": "active",
+    "http": 200,
+    "bytes": 24804,
+    "fields": [
+      "category",
+      "month",
+      "dfop",
+      "dvp",
+      "total"
+    ],
+    "sample": "samples/ksei/K28__graph-frequency.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K29",
+    "host": "www.ksei.co.id",
+    "path": "/api/graph/overbooking_graphs/cnf",
+    "method": "GET",
+    "params": {
+      "locale": "id",
+      "sort": "month"
+    },
+    "description": "CNF settlement series",
+    "category": "graph",
+    "status": "active",
+    "http": 200,
+    "bytes": 1355,
+    "fields": [
+      "category",
+      "month",
+      "fop",
+      "vp",
+      "total"
+    ],
+    "sample": "samples/ksei/K29__graph-cnf.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K30",
+    "host": "www.ksei.co.id",
+    "path": "/api/graph/overbooking_graphs/sectrs",
+    "method": "GET",
+    "params": {
+      "locale": "id",
+      "sort": "month"
+    },
+    "description": "SECTRS series",
+    "category": "graph",
+    "status": "active",
+    "http": 200,
+    "bytes": 1258,
+    "fields": [
+      "category",
+      "month",
+      "fop",
+      "vp",
+      "total"
+    ],
+    "sample": "samples/ksei/K30__graph-sectrs.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K31",
+    "host": "www.ksei.co.id",
+    "path": "/api/graph/overbooking_graphs/bts",
+    "method": "GET",
+    "params": {
+      "locale": "id",
+      "sort": "month"
+    },
+    "description": "BTS series",
+    "category": "graph",
+    "status": "active",
+    "http": 200,
+    "bytes": 1280,
+    "fields": [
+      "category",
+      "month",
+      "fop",
+      "vp",
+      "total"
+    ],
+    "sample": "samples/ksei/K31__graph-bts.json",
+    "scanned_at": "2026-10-26T07:16:05Z"
+  },
+  {
+    "id": "K32",
+    "host": "www.ksei.co.id",
+    "path": "/api/auth/user",
+    "method": "GET",
+    "params": {},
+    "description": "Current session user (cookie auth.strategy=local)",
+    "category": "auth",
+    "status": "authenticated",
+    "http": null,
+    "bytes": 0,
+    "fields": [],
+    "sample": null,
+    "scanned_at": "2026-10-26T07:54:39Z"
+  },
+  {
+    "id": "K33",
+    "host": "www.ksei.co.id",
+    "path": "/api/auth/login",
+    "method": "POST",
+    "params": {},
+    "description": "Login handler; requires credentials + session",
+    "category": "auth",
+    "status": "authenticated",
+    "http": null,
+    "bytes": 0,
+    "fields": [],
+    "sample": null,
+    "scanned_at": "2026-10-26T07:54:39Z"
+  },
+  {
+    "id": "K34",
+    "host": "www.ksei.co.id",
+    "path": "/api/auth/logout",
+    "method": "POST",
+    "params": {},
+    "description": "Logout handler",
+    "category": "auth",
+    "status": "authenticated",
+    "http": null,
+    "bytes": 0,
+    "fields": [],
+    "sample": null,
+    "scanned_at": "2026-10-26T07:54:39Z"
+  }
+]

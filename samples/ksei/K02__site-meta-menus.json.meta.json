@@ -1,0 +1,11 @@
+{
+  "id": "K02",
+  "url": "https://www.ksei.co.id/api/menus?locale=id",
+  "status": 200,
+  "scanned_at": "2026-10-26T07:16:05Z",
+  "description": "Full CMS navigation tree",
+  "category": "site-meta",
+  "params": {
+    "locale": "id"
+  }
+}

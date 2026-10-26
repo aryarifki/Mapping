@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+env/
+
+# Collector scratch space (bundles, probe HTML, logs)
+.probe/
+*.log
+.fetch.log
+.idx.log
+.idx_slow.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Never commit credentials or session material
+.env
+.env.*
+*.pem
+*.key
+.netrc
+
+# Large binaries -- samples are JSON only
+*.zip
+*.xlsx
+*.xls
+*.pdf

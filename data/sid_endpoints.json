@@ -1,0 +1,211 @@
+[
+  {
+    "id": "S01",
+    "host": "akses.ksei.co.id",
+    "path": "/service/informasi-saham/daftar-saham",
+    "method": "GET",
+    "params": {},
+    "description": "Full listed-securities snapshot with reference prices",
+    "category": "market-data",
+    "status": "active",
+    "http": 200,
+    "bytes": 209529,
+    "sample": "samples/sid/S01__daftar-saham.json",
+    "scanned_at": "2026-10-26T07:35:19Z"
+  },
+  {
+    "id": "S02",
+    "host": "akses.ksei.co.id",
+    "path": "/service/demografis/gender",
+    "method": "GET",
+    "params": {
+      "id": ""
+    },
+    "description": "SID investor demographics by province/city split by gender (empty id = national)",
+    "category": "investor/sid",
+    "status": "active",
+    "http": 200,
+    "bytes": 91051,
+    "sample": "samples/sid/S02__gender.json",
+    "scanned_at": "2026-10-26T07:35:19Z"
+  },
+  {
+    "id": "S03",
+    "host": "akses.ksei.co.id",
+    "path": "/service/demografis/detil-data",
+    "method": "GET",
+    "params": {},
+    "description": "Per-region investor counts with lat/long, for map rendering",
+    "category": "investor/sid",
+    "status": "active",
+    "http": 200,
+    "bytes": 6424,
+    "sample": "samples/sid/S03__detil-data.json",
+    "scanned_at": "2026-10-26T07:35:19Z"
+  },
+  {
+    "id": "S04",
+    "host": "akses.ksei.co.id",
+    "path": "/service/demografi/master/place",
+    "method": "GET",
+    "params": {},
+    "description": "Dukcapil region master: province + city codes used by every demografi filter",
+    "category": "reference",
+    "status": "active",
+    "http": 200,
+    "bytes": 75016,
+    "sample": "samples/sid/S04__place.json",
+    "scanned_at": "2026-10-26T07:35:19Z"
+  },
+  {
+    "id": "S05",
+    "host": "akses.ksei.co.id",
+    "path": "/service/demografis/updated-at",
+    "method": "GET",
+    "params": {
+      "lang": "id"
+    },
+    "description": "Timestamp of the last demographics refresh",
+    "category": "investor/sid",
+    "status": "active",
+    "http": 200,
+    "bytes": 74,
+    "sample": "samples/sid/S05__updated-at.json",
+    "scanned_at": "2026-10-26T07:35:19Z"
+  },
+  {
+    "id": "S06",
+    "host": "akses.ksei.co.id",
+    "path": "/service/aksi-korporasi/news/landing/periode/current-year",
+    "method": "GET",
+    "params": {},
+    "description": "Current corporate-action year marker",
+    "category": "corporate-action",
+    "status": "active",
+    "http": 200,
+    "bytes": 10,
+    "sample": "samples/sid/S06__current-year.json",
+    "scanned_at": "2026-10-26T07:35:19Z"
+  },
+  {
+    "id": "S07",
+    "host": "akses.ksei.co.id",
+    "path": "/service/demografis/occupation",
+    "method": "POST",
+    "params": {
+      "city": "",
+      "province": ""
+    },
+    "description": "Investor occupation breakdown, filterable by city/province",
+    "category": "investor/sid",
+    "status": "http-500",
+    "http": 500,
+    "bytes": 897,
+    "sample": null,
+    "scanned_at": "2026-10-26T07:35:19Z"
+  },
+  {
+    "id": "S08",
+    "host": "akses.ksei.co.id",
+    "path": "/service/demografi/age",
+    "method": "GET",
+    "params": {
+      "city": "",
+      "province": ""
+    },
+    "description": "Investor age-band breakdown, filterable by city/province",
+    "category": "investor/sid",
+    "status": "http-500",
+    "http": 500,
+    "bytes": 134,
+    "sample": null,
+    "scanned_at": "2026-10-26T07:35:19Z"
+  },
+  {
+    "id": "S09",
+    "host": "akses.ksei.co.id",
+    "path": "/service/demografi/investor",
+    "method": "GET",
+    "params": {
+      "city": "",
+      "province": ""
+    },
+    "description": "Investor type breakdown (individual/corporate/...)",
+    "category": "investor/sid",
+    "status": "http-500",
+    "http": 500,
+    "bytes": 139,
+    "sample": null,
+    "scanned_at": "2026-10-26T07:35:19Z"
+  },
+  {
+    "id": "A01",
+    "host": "akses.ksei.co.id",
+    "path": "/service/orchid/",
+    "method": "GET",
+    "params": {},
+    "description": "Investor portfolio/sub-account service (login required) (93 routes in bundle)",
+    "category": "authenticated",
+    "status": "authenticated",
+    "http": null,
+    "bytes": 0,
+    "sample": null,
+    "scanned_at": "2026-10-26T07:35:19Z"
+  },
+  {
+    "id": "A02",
+    "host": "akses.ksei.co.id",
+    "path": "/service/myportofolio/",
+    "method": "GET",
+    "params": {},
+    "description": "Investor portfolio views (login required) (48 routes in bundle)",
+    "category": "authenticated",
+    "status": "authenticated",
+    "http": null,
+    "bytes": 0,
+    "sample": null,
+    "scanned_at": "2026-10-26T07:35:19Z"
+  },
+  {
+    "id": "A03",
+    "host": "akses.ksei.co.id",
+    "path": "/service/myaccount/",
+    "method": "GET",
+    "params": {},
+    "description": "Investor account settings (login required) (25 routes in bundle)",
+    "category": "authenticated",
+    "status": "authenticated",
+    "http": null,
+    "bytes": 0,
+    "sample": null,
+    "scanned_at": "2026-10-26T07:35:19Z"
+  },
+  {
+    "id": "A04",
+    "host": "akses.ksei.co.id",
+    "path": "/service/emiten-area/",
+    "method": "GET",
+    "params": {},
+    "description": "Issuer-area reporting (issuer login required) (16 routes in bundle)",
+    "category": "authenticated",
+    "status": "authenticated",
+    "http": null,
+    "bytes": 0,
+    "sample": null,
+    "scanned_at": "2026-10-26T07:35:19Z"
+  },
+  {
+    "id": "A05",
+    "host": "akses.ksei.co.id",
+    "path": "/service/admin-mgt/",
+    "method": "GET",
+    "params": {},
+    "description": "Back-office administration (staff login required) (11 routes in bundle)",
+    "category": "authenticated",
+    "status": "authenticated",
+    "http": null,
+    "bytes": 0,
+    "sample": null,
+    "scanned_at": "2026-10-26T07:35:19Z"
+  }
+]

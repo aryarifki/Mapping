@@ -1,0 +1,54 @@
+[
+  {
+    "path": "/primary/StockData/GetStockSummary",
+    "note": "wrong controller; use TradingSummary/GetStockSummary"
+  },
+  {
+    "path": "/primary/StockData/GetIndexList",
+    "note": "no such action"
+  },
+  {
+    "path": "/primary/StockData/GetStockTrade",
+    "note": "no such action"
+  },
+  {
+    "path": "/primary/StockData/GetDailyTrading",
+    "note": "no such action"
+  },
+  {
+    "path": "/primary/StockData/GetBrokerSummary",
+    "note": "wrong controller; use TradingSummary/GetBrokerSummary"
+  },
+  {
+    "path": "/primary/StockData/GetTradeSummary",
+    "note": "no such action"
+  },
+  {
+    "path": "/primary/TradingSummary/GetIndexList",
+    "note": "no such action"
+  },
+  {
+    "path": "/primary/TradingSummary/GetSectoralSummary",
+    "note": "no such action"
+  },
+  {
+    "path": "/primary/ListedCompany/GetDividend",
+    "note": "no such action"
+  },
+  {
+    "path": "/primary/ListedCompany/GetCompanyDividend",
+    "note": "no such action"
+  },
+  {
+    "path": "/primary/ListedCompany/GetStockSplit",
+    "note": "no such action"
+  },
+  {
+    "path": "/primary/Dividend/GetDividend",
+    "note": "no such action"
+  },
+  {
+    "path": "/primary/Home/GetHome",
+    "note": "no such action"
+  }
+]

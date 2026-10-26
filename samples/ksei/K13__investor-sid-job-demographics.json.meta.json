@@ -1,0 +1,11 @@
+{
+  "id": "K13",
+  "url": "https://www.ksei.co.id/api/investor_demographic/individual/job_demographics?locale=id",
+  "status": 200,
+  "scanned_at": "2026-10-26T07:16:05Z",
+  "description": "Individual investor count by occupation",
+  "category": "investor/sid",
+  "params": {
+    "locale": "id"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "K04",
+  "url": "https://www.ksei.co.id/api/seo_metas?locale=id",
+  "status": 200,
+  "scanned_at": "2026-10-26T07:16:05Z",
+  "description": "Per-page SEO metadata",
+  "category": "site-meta",
+  "params": {
+    "locale": "id"
+  }
+}

@@ -1,0 +1,26 @@
+id,instrument,amount,percentage,category
+2,Mutual Fund,2328,37.59,Instrument Information
+2,Equity,1007,16.26,Instrument Information
+2,Corporate Bond,933,15.07,Instrument Information
+2,Structured Warrant,533,8.61,Instrument Information
+2,Sukuk,370,5.97,Instrument Information
+2,Equity Crowdfunding (Ecf),277,4.47,Instrument Information
+2,Sukuk Crowd Funding,177,2.86,Instrument Information
+2,Term Notes,167,2.7,Instrument Information
+2,Government Bond,120,1.94,Instrument Information
+2,Sbsn,47,0.76,Instrument Information
+2,Bank Indonesia Foreign Currency Sukuk (Suvbi),33,0.53,Instrument Information
+2,Bank Indonesia Sukuk (Sukbi),27,0.44,Instrument Information
+2,Spn,27,0.44,Instrument Information
+2,Debt Crowd Funding,27,0.44,Instrument Information
+2,Negotiable Certificate Of Deposit,23,0.37,Instrument Information
+2,Warrant,23,0.37,Instrument Information
+2,Bank Indonesia Rupiah Securities (Srbi),22,0.36,Instrument Information
+2,Bank Indonesia Foreign Currency Securities (Svbi),15,0.24,Instrument Information
+2,Bank Indonesia Floating Rate Note (Bi-Frn),12,0.19,Instrument Information
+2,Dana Investasi Real Estate,11,0.18,Instrument Information
+2,Eba,7,0.11,Instrument Information
+2,Perpetual Bonds,3,0.05,Instrument Information
+2,Right,2,0.03,Instrument Information
+2,Commercial Paper,1,0.02,Instrument Information
+2,Electronic Gold Receipts,1,0.02,Instrument Information

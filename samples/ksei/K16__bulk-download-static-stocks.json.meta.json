@@ -1,0 +1,11 @@
+{
+  "id": "K16",
+  "url": "https://www.ksei.co.id/api/static_stocks?locale=id",
+  "status": 200,
+  "scanned_at": "2026-10-26T07:16:05Z",
+  "description": "Monthly static securities master files (zip download links)",
+  "category": "bulk-download",
+  "params": {
+    "locale": "id"
+  }
+}

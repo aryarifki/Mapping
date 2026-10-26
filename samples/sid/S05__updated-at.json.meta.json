@@ -1,0 +1,12 @@
+{
+  "id": "S05",
+  "url": "https://akses.ksei.co.id/service/demografis/updated-at?lang=id",
+  "status": 200,
+  "scanned_at": "2026-10-26T07:35:19Z",
+  "description": "Timestamp of the last demographics refresh",
+  "category": "investor/sid",
+  "params": {
+    "lang": "id"
+  },
+  "method": "GET"
+}

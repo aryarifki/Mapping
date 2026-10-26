@@ -1,0 +1,18 @@
+rn,id,key,value,type,deleted_at,created_at,updated_at
+1,1099c6e6-bb68-4987-8046-c14c428a535d,copyright-year,2026,number,,2023-11-18 20:56:25,2026-06-18 09:50:43
+2,1f061d03-8e1e-4c9e-bd29-e8c9c165ca5f,currency-symbol,Rp. ,text,,2023-11-18 20:56:25,2023-11-18 20:56:25
+3,240be75d-cd48-4b17-a084-c62c913c065d,office-fax,+6221 719 6877,text,,2023-11-18 20:56:25,2023-11-18 20:56:25
+4,4b2127d1-a514-43de-98c1-1bae731586fd,facebook-url,https://www.facebook.com/ksei.official/,text,,2023-11-18 20:56:25,2024-01-24 08:03:24
+5,68397054-131b-40df-9256-6b129e846de7,office-email,helpdesk@ksei.co.id,text,,2023-11-18 20:56:25,2026-06-29 18:20:22
+6,719fea69-67f6-4405-b3b9-07463386beb7,twitter-url,https://twitter.com/OfficialKSEI,text,,2023-11-18 20:56:25,2024-01-24 08:04:58
+7,82cc0b76-b8ef-429b-a90e-9315b30af687,tiktok-url,https://www.tiktok.com/@ksei.official?_t=ZS-8vnS4ID2neU&_r=1,text,,2024-01-15 14:07:15,2025-04-24 16:18:37
+8,9bf6c7b1-2f01-447c-8137-1a863e372963,youtube-url,https://www.youtube.com/@kustodiansentralefekindone9650,text,,2023-11-18 20:56:25,2024-01-24 08:05:30
+9,9d00ae38-d427-4bbc-b15c-55be87710135,instagram-url,https://www.instagram.com/ksei.official/?hl=en,text,,2023-11-18 20:56:25,2024-01-24 08:07:32
+10,a1eaca35-8d92-4303-acad-65873451428d,setting-test,testing,text,,2025-08-08 11:56:39,2025-08-08 11:56:39
+11,a3892953-7275-4631-a8bd-211b707ba319,contact-email,helpdesk@ksei.co.id,text,,2026-06-29 18:21:11,2026-07-27 15:56:30
+12,c57df611-755b-4e64-8f55-7eb6727663b9,office-address,Jl. Pejaten Barat 2 No. 3A,textarea,,2023-11-18 20:56:25,2023-11-18 20:56:25
+13,c9bc8d23-0ef9-42bd-bcde-0b943ea7eb5a,office-telephone,(+62 21) 5087 2090,text,,2023-11-18 20:56:25,2026-06-29 18:19:37
+14,e151fc75-dee6-46c0-8b5f-d89859044213,investor-demography-pdf,this is a pdf file,text,,2023-11-18 20:56:25,2023-11-18 20:56:25
+15,e6134dbb-0cf6-4b2a-bde8-c9b3ceee295b,ksei-products-cover-image,This is a cover image for KSEI Products page,text,,2023-11-18 20:56:25,2023-11-18 20:56:25
+16,f19718ed-5707-4f00-bb33-d1fd3bb530a1,contact-tollfree,0800 1865 734,number,,2026-07-27 16:05:07,2026-07-27 16:08:46
+17,fe0cb670-1e0e-4167-a5cb-92d88788597c,linkedin-url,https://id.linkedin.com/company/kseiofficial,text,,2024-01-19 13:32:24,2024-01-24 08:06:59
