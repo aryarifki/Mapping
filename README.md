@@ -1,17 +1,23 @@
 # mapping-ksei-idx
 
-Pemetaan endpoint JSON publik milik tiga sistem pasar modal Indonesia:
+Pemetaan endpoint JSON milik tiga sistem pasar modal Indonesia, plus dokumentasi
+endpoint internal **Stockbit Exodus**:
 
 | Sistem | Host | Status recon |
 |---|---|---|
 | **KSEI** (Kustodian Sentral Efek Indonesia) | `www.ksei.co.id` | 31 endpoint aktif, tanpa WAF |
 | **AKSes / SID** (portal investor) | `akses.ksei.co.id` | 6 endpoint publik + 328 rute terdaftar |
 | **IDX** (Bursa Efek Indonesia) | `www.idx.co.id` | di belakang Cloudflare, lihat catatan |
+| **Stockbit Exodus** (internal, terautentikasi) | `exodus.stockbit.com`, `exodus.api.stockbit.com` | 107 path runtime + 15 probe terfokus; butuh Bearer token |
 
 > **Temuan penting:** `https://sid.ksei.co.id` — host yang disebut di brief — **tidak ada**
 > di DNS (NXDOMAIN). Tidak ada subdomain `sid`. Data SID/investor sebenarnya disajikan
 > lewat `www.ksei.co.id/api/investor_demographic/*` dan portal `akses.ksei.co.id`.
 > Detail di [`notes.md`](notes.md).
+
+> **Catatan Stockbit:** berbeda dari tiga sistem di atas, endpoint Stockbit **memerlukan
+> login**. Dokumentasinya read-only, tidak memuat token/kredensial, dan tidak menjalankan
+> endpoint tulis. Lihat [`docs/stockbit-exodus/README.md`](docs/stockbit-exodus/README.md).
 
 ---
 
@@ -25,7 +31,9 @@ Pemetaan endpoint JSON publik milik tiga sistem pasar modal Indonesia:
 ├── docs/
 │   ├── ksei_endpoints.md      # blok detail per endpoint KSEI
 │   ├── sid_endpoints.md       # blok detail per endpoint AKSes/SID
-│   └── idx_endpoints.md       # blok detail per endpoint IDX
+│   ├── idx_endpoints.md       # blok detail per endpoint IDX
+│   └── stockbit-exodus/
+│       └── README.md          # referensi API Stockbit Exodus (internal) + peta menu
 ├── samples/                   # respons mentah, apa adanya (tidak diedit)
 │   ├── ksei/  sid/  idx/
 ├── data/
@@ -77,6 +85,35 @@ for row in d["data"]:
 
 ---
 
+## Stockbit Exodus (internal)
+
+Dokumentasi lengkap: [`docs/stockbit-exodus/README.md`](docs/stockbit-exodus/README.md).
+
+Fokus dokumen:
+
+- **Profil perusahaan** — profil, direksi, pemegang saham ≥1% (dengan investor ID),
+  jumlah pemegang saham 24 bulan, UBO, anak perusahaan, klasifikasi.
+- **Kepemilikan** — pemegang saham per company ID, kepemilikan investor, UBO lintas
+  emiten, jaringan kepemilikan (`network`), dan pergerakan pemegang saham besar.
+- **Komposisi** — pie `ALL` dan `SCRIPPLESS`, serta chart *holding composition*
+  (All/Local/Foreign) berbasis scripless.
+- **Group konglomerasi** — jalur pencarian insider (`/search` → `/ownership?investor=`)
+  dan jalur katalog KONGLO (`/emitten/catalog` → `/emitten/catalog/{code}/company`).
+
+Batasan yang perlu dibaca sebelum memakai:
+
+- Build yang dianalisis: `v3.54.10` (339 chunk JS).
+- Semua request **read-only**; tidak ada order, trade, posting, atau mutasi watchlist.
+- Token, cookie, dan kredensial **tidak** disimpan di repo.
+- Sebagian besar endpoint memakai `Authorization: Bearer <access_token>`; chart
+  shareholder memakai token khusus **tanpa** `Bearer`.
+- `/stock-group` memakai WebSocket `marketMoverBatch` yang belum didekode; padanan
+  REST katalog didokumentasikan sebagai gantinya.
+- `shareholder_type=scripless` bukan nilai valid pada chart; komposisi scripless
+  diambil dari endpoint composition.
+
+---
+
 ## Pola akses yang ditemukan
 
 **KSEI / AKSes** — nginx + Varnish, tanpa WAF. Cukup `User-Agent` wajar. Untuk
@@ -105,9 +142,12 @@ di brief — lihat [`notes.md`](notes.md) untuk bukti header per header.
 Repo ini berisi **pemetaan endpoint publik dan contoh respons**, bukan alat
 serangan dan bukan data pribadi.
 
-- Hanya endpoint yang dapat diakses **tanpa autentikasi** yang diambil. Rute yang
-  butuh login (portofolio investor, area emiten, back-office) **dicatat namanya
-  saja** dan tidak pernah dipanggil.
+- Untuk **KSEI/AKSes/IDX**: hanya endpoint yang dapat diakses **tanpa autentikasi**
+  yang diambil. Rute yang butuh login (portofolio investor, area emiten, back-office)
+  **dicatat namanya saja** dan tidak pernah dipanggil.
+- Untuk **Stockbit**: endpoint internal dipanggil **read-only** memakai sesi milik
+  operator. Tidak ada order, trade, posting, komentar, atau mutasi watchlist. Token,
+  cookie, dan kredensial tidak disimpan di repo maupun dicetak di dokumen.
 - Tidak ada kredensial, cookie sesi, token, atau data identitas investor
   perseorangan di repo ini. Data demografi bersifat **agregat per wilayah**.
 - Semua request memakai jeda (rate limit) dan `User-Agent` yang jujur. Tidak ada
@@ -117,6 +157,7 @@ serangan dan bukan data pribadi.
   dan pertimbangkan izin tertulis. Endpoint internal dapat berubah atau ditutup
   tanpa pemberitahuan; skema di sini mencerminkan kondisi saat tanggal scan.
 - Data pasar modal yang disajikan IDX/KSEI adalah informasi publik, tetapi
-  redistribusi masif dapat melanggar ketentuan lisensi data bursa.
+  redistribusi masif dapat melanggar ketentuan lisensi data bursa. Data Stockbit
+  berasal dari API internal dan tunduk pada Terms of Service Stockbit.
 
 Gunakan untuk riset, jurnalisme data, atau integrasi internal yang sah.
